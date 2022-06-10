@@ -21,7 +21,7 @@ public class Edificio {
         nombre = m;
     }
 
-    public void establecerCostos(Double m){
+    public void establecerCosto(double m){
         costo = m;
     }
     
@@ -32,4 +32,13 @@ public class Edificio {
     public double obtenerCosto(){
         return costo;
     }    
+    
+    @Override
+    public String toString(){
+//        String reporte = String.format("%s (%.2f)\n",
+//                obtenerNombre(), obtenerCosto());
+        String reporte = String.format("%s (%.2f)\n",
+                nombre, costo);
+        return reporte;
+    }
 }
