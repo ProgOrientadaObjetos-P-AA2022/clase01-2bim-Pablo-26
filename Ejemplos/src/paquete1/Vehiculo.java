@@ -13,6 +13,8 @@ public class Vehiculo {
     private String matricula;
     private double valor;
     
+    
+    
     public void establecerTipo(String n){
         tipo = n;
     }
