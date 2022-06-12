@@ -13,7 +13,11 @@ public class Vehiculo {
     private String matricula;
     private double valor;
     
-    
+    public Vehiculo(String t, String m, double n){
+        tipo = t;
+        matricula = m;
+        valor = n;
+    }
     
     public void establecerTipo(String n){
         tipo = n;

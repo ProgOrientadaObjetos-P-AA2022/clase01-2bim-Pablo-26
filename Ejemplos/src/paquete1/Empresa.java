@@ -85,14 +85,14 @@ public class Empresa {
         String reporte = String.format("%s\nLista de Edificios ",
                 obtenerNombre());
         for(int i = 0; i < obtenerEdificios().length; i++){
-            reporte = String.format("%s\n%d. %s (%.2f)\n", reporte,(i+1),
+            reporte = String.format("%s\n%d. %s (%.2f)", reporte,(i+1),
                     obtenerEdificios()[i].obtenerNombre().toUpperCase(),
                     obtenerEdificios()[i].obtenerCosto());
         }
-        reporte = String.format("%s\nTotal de inmuebles: %.2f\n\n "
+        reporte = String.format("%s\nTotal de inmuebles: %.2f\n\n"
                 + "Lista de Vehículos ", reporte,
                 obtenerCostoBienesInmuebles());
-        for(int i = 0; i < obtenerEdificios().length; i++){
+        for(int i = 0; i < obtenerVehiculos().length; i++){
             reporte = String.format("%s\n%d. %s, %s (%.2f)", reporte,
                     (i+1),
                     obtenerVehiculos()[i].obtenerTipo(),
